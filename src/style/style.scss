@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 288824 */
+  src: url('//at.alicdn.com/t/font_3r7qvreejgd5cdi.eot');
+  src: url('//at.alicdn.com/t/font_3r7qvreejgd5cdi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_3r7qvreejgd5cdi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_3r7qvreejgd5cdi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_3r7qvreejgd5cdi.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  //font-family: 'Wawati SC',sans-serif;
+  background: #e1e1e1;
+  font-family: 'PingFangSC-Light','-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Wawati SC','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif;
+}
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:focus{
+  outline: none;
+}
+.important{
+  color: #ff5252;
+}
+.toast{
+  position: fixed;
+  width: 20%;
+  min-width: 200px;
+  height: 60px;
+  opacity: 0;
+  border-radius: 5px;
+  top: 0;
+  left: 40px;
+  right: 40px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  transition: 1s;
+  z-index: 9999;
+}
+
+.switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+.switch label {
+  cursor: pointer;
+}
+.switch input[type=checkbox][disabled]+.lever {
+  cursor: default;
+}
+.switch label input[type=checkbox][disabled]+.lever:after, .switch label input[type=checkbox][disabled]:checked+.lever:after {
+  background-color: #BDBDBD;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #69f0ae;
+  left: 20px;
+}
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #b9f6ca;
+}
+.switch label .lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background-color: #818181;
+  border-radius: 26px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: 0 16px;
+}
+.switch label .lever:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #F1F1F1;
+  border-radius: 21px;
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+  left: -5px;
+  //top: -3px;
+  transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+}
+
+.text{
+  display: inline-block;
+}
+.text label{
+  cursor: pointer;
+}
+.text input[type=text]{
+  border: none;
+  background: none;
+  border-bottom: 1px #666 solid;
+}
+.textarea textarea{
+  //border-radius: 4px;
+  background: none;
+}
