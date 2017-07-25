@@ -1,7 +1,7 @@
 <template>
-    <div class="home-ctn">
+    <div class="user-ctn">
         <loading v-if="loading"></loading>
-        <div class="home-bg"></div>
+        <div class="user-bg"></div>
         <div class="user-ctn" :style="showList?'top:-100vh':'top:0'">
             <div class="user-avatar" @click="showAvatar" :style="user.thumb?'background:url('+ user.thumb +') no-repeat center/cover;':''">
                 <span class="iconfont default-avatar" v-if="!user.thumb">&#xe655;</span>
@@ -10,9 +10,9 @@
             <div class="user-info">
                 <span>{{user.name}}</span>
             </div>
-            <div class="home-btns">
-                <div class="home-btn" @click="goToList">作品</div>
-                <div class="home-btn" @click="goToHome">回到主页</div>
+            <div class="user-btns">
+                <div class="user-btn" @click="goToList">作品</div>
+                <div class="user-btn" @click="goToHome">回到主页</div>
             </div>
         </div>
         <list :style="showList?'top:0':''" :show.sync="showList" :list="works"></list>
@@ -159,7 +159,7 @@
 </script>
 
 <style>
-    .home-ctn{
+    .user-ctn{
         position: relative;
         width: 100vw;
         height: 100vh;
@@ -228,7 +228,7 @@
         letter-spacing: 5px;
         text-indent: 5px;
     }
-    .home-desc_top{
+    .user-desc_top{
         font-family: 'Wawati SC',sans-serif;
         position: absolute;
         top: 30px;
@@ -236,7 +236,7 @@
         font-size: 20px;
         color: #fff;
     }
-    .home-desc_bottom{
+    .user-desc_bottom{
         font-family: 'Wawati SC',sans-serif;
         position: absolute;
         bottom: 30px;
@@ -244,7 +244,7 @@
         font-size: 20px;
         color: #fff;
     }
-    .home-bg{
+    .user-bg{
         position: absolute;
         top: 0;
         left: 0;
@@ -256,7 +256,7 @@
         z-index: -1;
         filter: blur(10px);
     }
-    .home-title{
+    .user-title{
         display: inline-block;
         font-size: 44px;
         color: #fff;
@@ -265,11 +265,11 @@
         letter-spacing: 50px;
         text-indent: 50px;
     }
-    .home-btns{
+    .user-btns{
         margin-top: 50px;
         text-align: center;
     }
-    .home-btn{
+    .user-btn{
         display: inline-block;
         width: 120px;
         height: 40px;
@@ -280,11 +280,11 @@
         cursor: pointer;
         transition: .3s;
     }
-    .home-btn:hover{
+    .user-btn:hover{
         box-shadow: 0 0 10px 1px rgba(255,255,255,.6);
         text-shadow: 0 0 5px rgba(255,255,255,.6);
     }
-    .home-btn_logout{
+    .user-btn_logout{
         position: absolute;
         left: 40px;
         bottom: 20px;
@@ -292,7 +292,7 @@
         cursor: pointer;
         color: #ef5350;
     }
-    .home-btn_logout:hover{
+    .user-btn_logout:hover{
         box-shadow: 0 0 10px 1px rgba(255,0,0,.3);
         text-shadow: 0 0 5px rgba(255,0,0,.3);
     }
