@@ -2,6 +2,10 @@
 
 可视化音乐分享站~
 
+![](shotcut2.png)
+
+![](shotcut.png)
+
 
 测试版地址：[https://moonset.moe](https://moonset.moe)
 
