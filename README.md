@@ -4,4 +4,4 @@
 
 测试版地址：[https://moonset.moe](https://moonset.moe)
 
-参考效果：[Misic](https://moonset.moe/#/1)
+参考效果：[Welcome hear!](https://moonset.moe/#/1/1)
